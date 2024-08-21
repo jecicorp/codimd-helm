@@ -14,8 +14,6 @@ popd
 
 pushd build
   helm package ../charts/codimd
-  git checkout gh-pages
-  helm repo index --merge ../index.yaml .
   mv codimd*.tgz ../
   mv index.yaml ../
 popd

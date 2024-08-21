@@ -79,7 +79,7 @@ spec:
             - name: CMD_DB_URL
               valueFrom:
                 secretKeyRef:
-                  name: {{ template "codimd.shortName" . }}-db-secret
+                  name: codimd-db-secret
                   key: connection
             - name: CMD_SESSION_LIFE
               value: {{ .Values.codimd.security.sessionLife | quote }}
