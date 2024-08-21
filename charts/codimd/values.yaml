@@ -84,6 +84,10 @@ ingress:
 ## CodiMD application configuration
 ##
 codimd:
+  dbUrl:
+    secretName: codimd-pg-app
+    secretkey: "uri"
+
   ##
   ## Affinity for pod assignment
   ## Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#affinity-and-anti-affinity

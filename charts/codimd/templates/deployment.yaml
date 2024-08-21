@@ -79,8 +79,8 @@ spec:
             - name: CMD_DB_URL
               valueFrom:
                 secretKeyRef:
-                  name: codimd-db-secret
-                  key: connection
+                  name: {{ .Values.codimd.dbUrl.secretName | quote }}
+                  key: {{ .Values.codimd.dbUrl.secretkey | quote }}
             - name: CMD_SESSION_LIFE
               value: {{ .Values.codimd.security.sessionLife | quote }}
             - name: CMD_HSTS_ENABLE
