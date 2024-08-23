@@ -9,7 +9,7 @@
 image:
   registry: "nabo.codimd.dev"
   repository: "hackmdio/hackmd"
-  tag: "2.5.1"
+  tag: "2.5.3"
   pullPolicy: IfNotPresent
   pullSecrets: []
 #    - myRegistryKeySecretName
